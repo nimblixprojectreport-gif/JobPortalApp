@@ -1,0 +1,21 @@
+[33m00e278a0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mjobportelteam[m[33m, [m[1;31morigin/jobportelteam[m[33m)[m Resolve merge conflicts - keep our changes
+[33m9c83f63d[m Add frontend React app, jobs API, saved jobs API with serializers and URLs
+[33m23c3e7c3[m[33m ([m[1;31mupstream/jobportelteam[m[33m)[m login and password reset
+[33m62ddd944[m Merge branch 'jobportelteam' into jobportelteam
+[33m9d20c522[m Implement FR-02 login and FR-03 password reset
+[33m5ec5ab93[m Recruiter and Company API
+[33medb3f5fc[m Resolved merge conflicts with upstream jobportelteam
+[33m6200e91e[m Interview
+[33m36dd3e02[m Registration API
+[33mb630dd21[m Merge branch 'jobportelteam' into user-registration-api
+[33m30bbc3b0[m Add CandidateProfile, Education, WorkExperience, ResumeSkill, Resume models
+[33mfc4984b7[m Implement user registration API and update configuration
+[33m0cc55fd6[m Merge main branch into current branch
+[33m49d6785e[m feat: implement recruiter profile and job posting module
+[33mb6e47056[m Initial project upload
+[33m9225ac16[m Merge branch 'nimblixprojectreport-gif:main' into main
+[33m083e9bae[m Interview Management System
+[33me634d1b6[m Add CandidateProfile, Education, WorkExperience, ResumeSkill, Resume models
+[33m01d1c3ab[m Updtaed fields of candidates entity
+[33mb9207029[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Job Portal
+[33m602d121a[m Job Portal
