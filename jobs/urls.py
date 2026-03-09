@@ -9,19 +9,24 @@ from .views import (
     delete_job
 )
 
+# Router for ViewSet
 router = DefaultRouter()
 router.register(r'jobs', JobViewSet, basename='jobs')
 
 urlpatterns = [
 
+    
     # Router APIs
+  
     path('', include(router.urls)),
 
-    # Function APIs
-    path('add-job/', add_job),
-    path('job-list/', job_list),
-    path('job-detail/<int:id>/', job_detail),
-    path('update-job/<int:id>/', update_job),
-    path('delete-job/<int:id>/', delete_job),
+   
+    # Custom Job APIs
+    
+    path('jobs/add/', add_job, name='add-job'),
+    path('jobs/list/', job_list, name='job-list'),
+    path('jobs/<int:id>/', job_detail, name='job-detail'),
+    path('jobs/update/<int:id>/', update_job, name='update-job'),
+    path('jobs/delete/<int:id>/', delete_job, name='delete-job'),
 
 ]
