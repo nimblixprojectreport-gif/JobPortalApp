@@ -1,0 +1,7 @@
+﻿node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.env
+db.sqlite3
+frontend/node_modules/
