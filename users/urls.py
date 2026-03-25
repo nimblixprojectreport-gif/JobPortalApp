@@ -1,4 +1,16 @@
 from django.urls import path
+<<<<<<< HEAD
+
+from . import views
+
+urlpatterns = [
+    path('login/', views.login_view, name='login'),
+    path('password-reset/request/', views.password_reset_request_view, name='password_reset_request'),
+    path('password-reset/confirm/', views.password_reset_confirm_view, name='password_reset_confirm'),
+    path('profile/', views.profile_view, name='profile'),
+]
+
+=======
 from . import views
 
 urlpatterns = [
@@ -11,3 +23,4 @@ urlpatterns = [
     path('profile/',       views.ProfileView.as_view(),              name='profile'),
     path('',               views.UserListView.as_view(),             name='user-list'),
 ]
+>>>>>>> upstream/jobportelteam

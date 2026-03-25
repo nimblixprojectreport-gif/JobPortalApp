@@ -13,7 +13,10 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+<<<<<<< HEAD
+=======
 from datetime import timedelta
+>>>>>>> upstream/jobportelteam
 
 # Load environment variables
 load_dotenv()
@@ -166,6 +169,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+<<<<<<< HEAD
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+=======
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SIMPLE_JWT = {
@@ -177,3 +183,4 @@ AUTHENTICATION_BACKENDS = [
     'users.authentication.EmailBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
+>>>>>>> upstream/jobportelteam

@@ -1,33 +1,26 @@
-﻿import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
 import { CompanyRegistration } from './pages/CompanyRegistration';
 import { CompanyDashboard } from './pages/CompanyDashboard';
 import { AuthProvider } from './contexts/AuthContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import './index.css';
 
-const App = () => {
+function App() {
   return (
-    <React.StrictMode>
-      <BrowserRouter>
-        <ThemeProvider>
-          <AuthProvider>
-            <div className="min-h-screen bg-gray-50">
-              <CompanyRegistration />
-            </div>
-          </AuthProvider>
-        </ThemeProvider>
-      </BrowserRouter>
-    </React.StrictMode>
+    <BrowserRouter>
+      <ThemeProvider>
+        <AuthProvider>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/register" element={<CompanyRegistration />} />
+            <Route path="/company" element={<CompanyDashboard />} />
+          </Routes>
+        </AuthProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   );
-};
-
-const container = document.getElementById('root');
-if (!container) {
-  throw new Error('Failed to find the root element');
 }
 
-const root = createRoot(container);
-root.render(<App />);
-
+export default App;
